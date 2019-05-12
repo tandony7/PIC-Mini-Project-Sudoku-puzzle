@@ -1,3 +1,9 @@
+/**
+Code Author: Yash Tandon
+Guided By: Vaibhav Vasani
+College: K J Somaiya College of Engineering
+Date of Submission: 12-05-2019
+*/
 #include<stdio.h>
 void selectpuzzle();
 int checkrows();
@@ -10,7 +16,7 @@ void main()
     selectpuzzle();
     for(i=0;i<9;i++)
     {
-        for(j=0;j<9;j++)
+        for(j=0;j<9;j++)//Meant to store positions of fixed/pre-entered numbers.
         {
             if(a[i][j]==0)
                 b[i][j]=0;
@@ -20,7 +26,7 @@ void main()
     }
     while(x==1)
     {
-        for(i=0;i<9;i++)
+        for(i=0;i<9;i++)//Displaying the sudoku puzzle
         {
             if(i==0)
             {
@@ -55,7 +61,7 @@ void main()
                 printf("\n");
             }
         }
-        for(;;)
+        for(;;)//Conditions for solving a sudoku
         {
         printf("Enter row number:");
         scanf("%d",&r);
